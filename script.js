@@ -1,4 +1,30 @@
-console.log(12131);
+let num = 266219;
+let res = 1;
+num.toString().split('').forEach(function(el) {
+    res *= el;
+});
+console.log(res); 
+
+res **= 3;
+
+console.log(res);
+
+res = String(res).slice(0,2)
+
+console.log(res);
+alert(res);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
