@@ -1,15 +1,15 @@
 let num = 266219;
 let res = 1;
-num.toString().split('').forEach(function(el) {
-    res *= el;
+num.toString().split('').forEach(function (el) {
+  res *= el;
 });
-console.log(res); 
+console.log(res);
 
 res **= 3;
 
 console.log(res);
 
-res = String(res).slice(0,2)
+res = String(res).slice(0, 2)
 
 console.log(res);
 alert(res);
@@ -56,6 +56,3 @@ alert(res);
 
 
 // 5) В отдельном репозитории для усложненных уроков, добавить папку или ветку со вторым уроком в свой репозиторий на GitHub
-
-
-
