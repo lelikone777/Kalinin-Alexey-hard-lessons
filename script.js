@@ -1,58 +1,55 @@
-let num = 266219;
-let res = 1;
-num.toString().split('').forEach(function (el) {
-  res *= el;
-});
-console.log(res);
+// let num = 266219;
+// let res = 1;
+// num.toString().split('').forEach(function (el) {
+//   res *= el;
+// });
+// console.log(res);
 
-res **= 3;
+// res **= 3;
 
-console.log(res);
+// console.log(res);
 
-res = String(res).slice(0, 2)
+// res = String(res).slice(0, 2)
 
-console.log(res);
-alert(res);
+// console.log(res);
+// alert(res);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Необходимо выполнить в отдельном JS файле, подключенному к отдельной HTML странице
-
+//свое решение
+let num = 226219;
+let one = 1;
+let numStringArr = num.toString().split('');
+console.log(numStringArr); 
+console.log(numStringArr.length);
+for (let i = 0; i < numStringArr.length; i++){
+  one *= numStringArr[i]
+  }
+console.log(one);
+one **= 3;
+console.log(one);
+let oneString = String(one).split('').slice(0, 2);
+console.log(typeof oneString);
+console.log(oneString);
 
 
 
 
-// 1) Создать переменную num со значением 266219 (тип данных число)
+// //Другое решение 
+// let mum = 266219;
+// let res = 1;
+// num.toString().split('').forEach(function (el) {
+//   res *= el;
+// });
+// console.log(res);
 
 
 
-// 2) Вывести в консоль произведение (умножение) цифр этого числа
-
-// Например: число 123, при помощи javaScript получить каждое цифру ( 1, 2, 3 ) и перемножить их.
-
-// Правильно использовать цикл или методы перебора.
 
 
 
-// 3) Полученный результат возвести в степень 3, используя только 1 оператор (Math.pow не подходит)
 
 
 
-// 4) Вывести на экран первые 2 цифры полученного числа
 
 
 
-// 5) В отдельном репозитории для усложненных уроков, добавить папку или ветку со вторым уроком в свой репозиторий на GitHub
+
